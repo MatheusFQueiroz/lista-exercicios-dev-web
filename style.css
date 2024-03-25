@@ -6,8 +6,12 @@ body {
     height: 5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+}
+img {
+    max-width: 90px;
+    height: 60px;
 }
 .container {
     display: flex;
