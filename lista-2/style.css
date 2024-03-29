@@ -4,10 +4,71 @@ body {
     display:flex;
     justify-content: center;
 }
-.formulario {   
-    display: grid;
-    justify-content: center;
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
+    height: 980px;
     box-shadow: transparent 0 0 0 6px,rgba(18, 18, 18, .1) 0 12px 30px;
     border-radius: 30px;
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+textarea {
+	resize: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+.nome-sobrenome {
+    display: grid;
+    gap: 5px;
+}
+#nome, #sobrenome {
+    border: 1px solid black;
+    width: 320px;
+    height: 20px;
+    border-radius: 6px;
+}
+legend {
+    font-weight: bold;
+}
+.sexo {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 6px;
+    width: 330px;
+    font-size: 17px;
+}
+input[type="radio"] {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 0.5rem;
+    accent-color: black;
+}
+.interesses {
+    margin-top: 20px;
+    width: 330px;
+    font-size: 17px;
+}
+input[type="checkbox"] {
+    height: 1rem;
+    width: 1rem;
+    margin: 0.5rem 0.5rem 0 0 ;
+    accent-color: black;
+}
+#cargo, #empresa, #graduacao, #instituicao {
+    border: 1px solid black;
+    width: 320px;
+    height: 20px;
+    border-radius: 6px;
+    margin: 4px 0px 10px 0px;
+}
+#competencias, #atribuicoes {
+    border: 1px solid black;
+    width: 320px;
+    height: 50px;
+    border-radius: 6px;
+    margin-top: 4px;
 }

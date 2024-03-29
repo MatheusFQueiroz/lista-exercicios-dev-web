@@ -8,12 +8,60 @@
 </head>
 <body>
     <div class="formulario">
-        <h2>Cadastro</h2>
+        <h1>Cadastro</h1><br/>
         
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome">
-        <label for="sobrenome">Sobrenome</label>
-        <input type="text" id="sobrenome" name="sobrenome">
+        <div class="nome-sobrenome">
+            <label for="nome">Nome</label>
+            <textarea id="nome" name="nome"></textarea>
+
+            <label for="sobrenome">Sobrenome</label>
+            <textarea type="text" id="sobrenome" name="sobrenome"></textarea>
+        </div>
+        <div class="sexo">
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sexo1">
+            <label for="sexo1">Masculino</label>
+
+            <input type="radio" name="sexo" id="sexo2">
+            <label for="sexo2">Feminino</label>
+        </div>
+        <div class="interesses">
+            <legend>Interesses</legend>
+
+            <input type="checkbox" name="javaScript" id="javaScript">
+            <label for="javaScript">javaScript</label><br>
+
+            <input type="checkbox" name="php" id="php">
+            <label for="php">PHP</label><br>
+
+            <input type="checkbox" name="python" id="python">
+            <label for="python">Python</label><br>
+
+            <input type="checkbox" name="java" id="java">
+            <label for="java">java</label>
+        </div>
+        <div class="experiencia">
+            <h4>Experiência</h4>
+            <label for="cargo">Cargo</label><br>
+            <textarea type="text" id="cargo" name="cargo"></textarea><br>
+
+            <label for="empresa">Empresa</label><br>
+            <textarea type="text" id="empresa" name="empresa"></textarea><br>
+
+            <label for="competencias">Competências</label><br>
+            <textarea type="text" id="competencias" name="competencias rows="4""></textarea>
+        </div>
+        <div class="formacaoAcademica">
+            <h4>Formação acadêmica</h4>
+            <label for="graduacao">Graduação</label><br>
+            <textarea type="text" id="graduacao" name="graduacao"></textarea><br>
+
+            <label for="instituicao">Instituição</label><br>
+            <textarea type="text" id="instituicao" name="instituicao"></textarea><br>
+
+            <label for="atribuicoes">Atribuições</label><br>
+            <textarea type="text" id="atribuicoes" name="atribuicoes rows="4""></textarea>
+        </div>
     </div>
 </body>
 </html>
