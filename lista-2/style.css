@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    height: 980px;
+    height: 1160px;
     box-shadow: transparent 0 0 0 6px,rgba(18, 18, 18, .1) 0 12px 30px;
     border-radius: 30px;
     padding-top: 20px;
@@ -20,11 +20,11 @@ textarea {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
 }
-.nome-sobrenome {
+.nome-sobrenome, .contato{
     display: grid;
     gap: 5px;
 }
-#nome, #sobrenome {
+#nome, #sobrenome, #telefone, #email {
     border: 1px solid black;
     width: 320px;
     height: 20px;
@@ -71,4 +71,7 @@ input[type="checkbox"] {
     height: 50px;
     border-radius: 6px;
     margin-top: 4px;
+}
+#telefone {
+    padding: 2px;
 }
