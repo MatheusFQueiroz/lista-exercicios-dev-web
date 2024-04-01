@@ -15,7 +15,7 @@
             <textarea id="nome" name="nome"></textarea>
 
             <label for="sobrenome">Sobrenome</label>
-            <textarea type="text" id="sobrenome" name="sobrenome"></textarea>
+            <textarea id="sobrenome" name="sobrenome"></textarea>
         </div>
         <div class="sexo">
             <legend>Sexo</legend>
@@ -43,24 +43,24 @@
         <div class="experiencia">
             <h4>Experiência</h4>
             <label for="cargo">Cargo</label><br>
-            <textarea type="text" id="cargo" name="cargo"></textarea><br>
+            <textarea id="cargo" name="cargo"></textarea><br>
 
             <label for="empresa">Empresa</label><br>
-            <textarea type="text" id="empresa" name="empresa"></textarea><br>
+            <textarea id="empresa" name="empresa"></textarea><br>
 
             <label for="competencias">Competências</label><br>
-            <textarea type="text" id="competencias" name="competencias rows="4""></textarea>
+            <textarea id="competencias" name="competencias rows="4""></textarea>
         </div>
         <div class="formacaoAcademica">
             <h4>Formação acadêmica</h4>
             <label for="graduacao">Graduação</label><br>
-            <textarea type="text" id="graduacao" name="graduacao"></textarea><br>
+            <textarea id="graduacao" name="graduacao"></textarea><br>
 
             <label for="instituicao">Instituição</label><br>
-            <textarea type="text" id="instituicao" name="instituicao"></textarea><br>
+            <textarea id="instituicao" name="instituicao"></textarea><br>
 
             <label for="atribuicoes">Atribuições</label><br>
-            <textarea type="text" id="atribuicoes" name="atribuicoes rows="4""></textarea>
+            <textarea id="atribuicoes" name="atribuicoes rows="4""></textarea>
         </div>
         <div class="contato">
             <h4>Contato</h4>
@@ -70,9 +70,27 @@
             <label for="telefone">Telefone</label>
             <input type="tel" id="telefone" name="telefone" maxlength="11">
         </div>
-        <button>
-            Enviar
-        </button>
+        <div class="botoes">
+            <button id="desabilitarCSSBtn">
+                Desabilitar CSS
+            </button>
+            <button onclick="location.reload()">
+                Habilitar CSS
+            </button>
+        </div>
     </div>
 </body>
+<script>
+    function desabilitarCSS() {
+            var cssLink = document.querySelector("link[href='style.css']");
+
+            if (cssLink) {
+                cssLink.parentNode.removeChild(cssLink);
+            }
+        }
+
+        document.getElementById("desabilitarCSSBtn").addEventListener("click", function() {
+            desabilitarCSS();
+        });
+</script>
 </html>
