@@ -38,7 +38,7 @@
             <label for="python">Python</label><br>
 
             <input type="checkbox" name="java" id="java">
-            <label for="java">java</label>
+            <label for="java">Java</label>
         </div>
         <div class="experiencia">
             <h4>Experiência</h4>
@@ -51,16 +51,25 @@
             <label for="competencias">Competências</label><br>
             <textarea id="competencias" name="competencias rows="4""></textarea>
         </div>
-        <div class="formacaoAcademica">
-            <h4>Formação acadêmica</h4>
-            <label for="graduacao">Graduação</label><br>
-            <textarea id="graduacao" name="graduacao"></textarea><br>
+        <div class="interesses">
+            <h4>Escolaridade</h4>
+            <input type="radio" name="idesc" id="idfundamental">
+            <label for="idfundamental">Fundamental</label><br>
 
-            <label for="instituicao">Instituição</label><br>
-            <textarea id="instituicao" name="instituicao"></textarea><br>
+            <input type="radio" name="idesc" id="idmedio">
+            <label for="idmedio">Médio</label><br>
 
-            <label for="atribuicoes">Atribuições</label><br>
-            <textarea id="atribuicoes" name="atribuicoes rows="4""></textarea>
+            <input type="radio" name="idesc" id="idsuperior">
+            <label for="idsuperior">Superior (Graduação)</label><br>
+
+            <input type="radio" name="idesc" id="idposgraduacao">
+            <label for="idposgraduacao">Pós-graduação</label><br>
+
+            <input type="radio" name="idesc" id="idmestrado">
+            <label for="idmestrado">Mestrado</label><br>
+
+            <input type="radio" name="idesc" id="iddoutorado">
+            <label for="iddoutorado">Doutorado</label><br>
         </div>
         <div class="contato">
             <h4>Contato</h4>
@@ -68,7 +77,7 @@
             <textarea id="email" name="email"></textarea>
 
             <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" maxlength="11">
+            <input type="text" id="telefone">
         </div>
         <div class="botoes">
             <button id="desabilitarCSSBtn">
@@ -80,6 +89,7 @@
         </div>
     </div>
 </body>
+
 <script>
     function desabilitarCSS() {
             var cssLink = document.querySelector("link[href='style.css']");
@@ -91,6 +101,22 @@
 
         document.getElementById("desabilitarCSSBtn").addEventListener("click", function() {
             desabilitarCSS();
-        });
+        }); 
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script>
+        $(document).ready(function() {
+            $('#telefone').on('input', function() {
+                var telefone = $(this).val().replace(/\D/g, '');
+                if (telefone.length === 11) {
+                    $(this).mask('(00) 00000-0000');
+                } else {
+                    $(this).mask('(00) 00000-0000');
+                    }
+            });
+        });
+            </script>
+</script>
+
 </html>
