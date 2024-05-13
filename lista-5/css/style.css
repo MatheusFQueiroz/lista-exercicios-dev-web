@@ -19,14 +19,17 @@ body {
     justify-content: space-between;
 }
 .logo {
-    margin-left: 40px;
+    margin-left: 60px;
 }
 img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 .navbar {
-    margin-right: 40px;
+    margin-right: 60px;
+}
+.botao-nav {
+    margin-left: 10px;
 }
 button {
     height: 40px;
@@ -38,7 +41,7 @@ button {
     font-size: 0.9rem;
 }
 button:hover {
-    background-color: #f1f1f1;
+    background-color: #EA0D44;
 }
 .section {
     margin: 20px 40px 20px 40px;
@@ -52,8 +55,10 @@ p {
     box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 -6px 20px;
     align-items: center;
 }
-.footer p {
+.footer {
     margin-top: 20px;
+}
+.footer-txt {
     text-align: center;
     font-size: 0.9rem;
 }
